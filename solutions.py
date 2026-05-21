@@ -11,7 +11,12 @@ def calculate_profit():
     You can assume the user will enter only numeric characters, e.g. "3000", not "$3,000.00"
     The output should match the format of the following examples: "Profit: $690.00" for sales of $3,000, or "Profit: $2,300.00" for sales of $10,000, etc.
     """
-
+    total_sales=input("Please enter the projected amout of total sales. ")
+    total_sales_as_int = int(total_sales)
+    annual_profit = total_sales_as_int * 0.23
+    annual_profit_as_int = int(annual_profit)
+    print(f"Profit: ${annual_profit}")
+    
 
 def calculate_quotient_and_remainder():
     """
@@ -22,8 +27,13 @@ def calculate_quotient_and_remainder():
       Enter number #2: 2
       2 goes into 5 a total of 2 times with a remainder of 1
     """
-
-
+    integer_1 = input("Please input your first integer. ")
+    integer_2 = input("Please input your second integer. ")
+    integer_1_as_int = int(integer_1)
+    integer_2_as_int = int(integer_2)
+    quotient = integer_1_as_int // integer_2_as_int
+    remainder = integer_1_as_int % integer_2_as_int
+    print(f"{integer_2_as_int} goes into {integer_1_as_int} a total of {quotient} times with a remainder of {remainder}")
 def calculate_miles_per_gallon():
     """
     A car's Miles Per Gallon (MPG) can be calculated using the following formula:
@@ -35,8 +45,14 @@ def calculate_miles_per_gallon():
       Gas used (gallons): 25
       Miles per gallon: 2.2
     """
-
-
+    Miles_driven = input("Please input the number of miles driven")
+    Gallon_gas = input("Please input gallon of gas used")
+    Miles_driven_as_int = int(Miles_driven)
+    Gallon_gas_as_int = int(Gallon_gas)
+    Miles_per_gallon = Miles_driven_as_int/Gallon_gas_as_int
+    print("Miles driven:", Miles_driven)
+    print("Gas used(gallons):", Gallon_gas)
+    print("Miles per gallon:", Miles_per_gallon)
 def align_text():
     """
     Complete this function such that it asks the user to enter in 3 price values (as floating point numbers).
@@ -53,3 +69,11 @@ def align_text():
       Price #2: $   10.00
       Price #3: $ 9532.60
     """
+    Price_1 = float(input("Please enter price 1"))
+    Price_2 = float(input("Please enter price 2"))
+    Price_3 = float(input("Please enter price 3"))
+    print("Here are your prices!")
+    print("Price #1: $   ", Price_1)
+    print("Price #2: $  ", Price_2)
+    print("Price #3: $ ", Price_3)
+    
