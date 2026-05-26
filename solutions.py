@@ -15,7 +15,7 @@ def calculate_profit():
     total_sales_as_int = int(total_sales)
     annual_profit = total_sales_as_int * 0.23
     annual_profit_as_int = int(annual_profit)
-    print(f"Profit: ${annual_profit}")
+    print(f"Profit: ${annual_profit:.2f}")
     
 
 def calculate_quotient_and_remainder():
@@ -73,7 +73,7 @@ def align_text():
     Price_2 = float(input("Please enter price 2"))
     Price_3 = float(input("Please enter price 3"))
     print("Here are your prices!")
-    print("Price #1: $   ", Price_1)
-    print("Price #2: $  ", Price_2)
-    print("Price #3: $ ", Price_3)
+    print("Price #1: $", format(Price_1, "8.2f"))
+    print("Price #2: $", format(Price_2, "8.2f"))
+    print("Price #3: $", format(Price_3, "8.2f"))
     
